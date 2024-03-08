@@ -1,7 +1,7 @@
 ---
   - name: Install RPM with Satellite certificate
     ansible.builtin.dnf:
-      name: "{{ rhsm.cert_rpm }}"
+      name: "http://{{ rhsm.server_hostname }}{{ rhsm.cert_rpm }}"
       disable_gpg_check: true
       state: present
     when:
