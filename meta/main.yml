@@ -1,0 +1,11 @@
+---
+  galaxy_info:
+    role_name: ansible-role-subscription-manager
+    author: Lyas Spiehler
+    description: Ansible role to manage subscription manager
+    company: Sapphire Health
+  collections:
+    - name: community.general.redhat_subscription
+    - name: community.general.rhsm_repository
+  dependencies: []
+...
