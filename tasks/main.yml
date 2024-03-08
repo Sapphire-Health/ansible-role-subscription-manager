@@ -13,7 +13,7 @@
     #- name: debug vars
     #  debug:
     #    msg: "{{ rhsm }}"
-    redhat_subscription:
+    community.general.redhat_subscription:
       state: "{{ rhsm.state }}"
       server_hostname: "{{ rhsm.server_hostname }}"
       activationkey: "{{ rhsm.activationkey }}"
