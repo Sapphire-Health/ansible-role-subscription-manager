@@ -25,7 +25,7 @@
     become: yes
   - name: Enable the satellite repo
     community.general.rhsm_repository:
-      name: satellite-client-6-for-rhel-8-x86_64-rpms
+      name: "satellite-client-6-for-rhel-{{ ansible_distribution_major_version }}-x86_64-rpms"
       state: enabled
     when:
     - rhsm is defined
